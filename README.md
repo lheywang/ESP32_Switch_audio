@@ -33,7 +33,7 @@ In the worst case, you will get 1/2 of the speaker impedance, and in the other c
 Take care to wire it correctly : 
 
 - 1 pairs : anywhere
-- 2 pairs : 1 + 2 / 3 + 3 (1 + 3 / 2 + 4 will work, at 1/2 of the impedance, you choose)
+- 2 pairs : 1 + 2 / 3 + 3 (1 + 3 / 2 + 4 will work, at 1/2 of the impedance, you can choose | by default it's 2x impedance.)
 - 3 pairs : 1 + 2 + 3
 - 4 pairs : 1 + 2 + 3 + 4
 
