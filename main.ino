@@ -28,11 +28,11 @@
  #include <time.h>
  
 // ----------- SETTINGS ---------------------------------------------------------------------------------------------------------------------------------------
-const char * ssid = "TPLINK_MAISON";
-const char * password = "92912151";
-const char * host = "audio-switch";
+const char * ssid = "your_wif_SSID";
+const char * password = "your_password";
+const char * host = "audio-switch"; // here the DNS name, you can edit it when you want.
 
-const long  gmtOffset_sec = 3600;
+const long  gmtOffset_sec = 3600; // Used to setup GMT Time, in seconds. By default it's setup to GMT+1. Only used for night off / on cycle
 const int   daylightOffset_sec = 3600;
 
 // ---------- PINOUT SETTINGS -----------------------------------------------------------------------------------------------------------------------------------------
