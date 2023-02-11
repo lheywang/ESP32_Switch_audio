@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Switch audio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+
+        
+        
+      <script type="module" crossorigin src="/assets/index-cc179eba.js"></script>
+      <link rel="stylesheet" href="/assets/index-4decc29d.css">
+    </head>
+    <body class="loading">
+        <header class="header">
+            <div class="container">
+                <span class="material-symbols-outlined">speaker_group</span>
+                <h1>Son de la maison</h1>
+            </div>
+        </header>
+
+        <section class="container disconnected-warn">
+            <h2>
+                <span class="material-symbols-outlined">sync_problem</span> Problème de
+                connexion au serveur !
+            </h2>
+            <p>
+                Pour des raisons de sécurité, toutes les options sur cette page sont
+                <strong>désactivées</strong>. <br />Tu peux essayer de recharger la page :
+            </p>
+            <button onclick="javascript:window.location.reload()">Recharger</button>
+            <p>
+                La page rechargera automatiquement dans
+                <strong class="disconnected-warn-reload-sec">...</strong> seconde(s).
+            </p>
+        </section>
+
+        <section class="container loading-msg">
+            <h2><span class="material-symbols-outlined">sync</span> Chargement...</h2>
+            <p>
+                Merci de patienter quelques secondes pendant le chargement des
+                informations...
+            </p>
+
+            <noscript
+                ><strong
+                    >Oh! Cette application requiert du JavaScript, or celui-ci est
+                    désactivé et cela nous empêche de communiquer avec le serveur.</strong
+                ><br />Pour l'activer, nous te conseillons de chercher dans tes paramètres
+                navigateurs.</noscript
+            >
+        </section>
+
+        <section class="speakers">
+            <div class="container">
+                <h2>Haut-parleurs</h2>
+                <div class="speakers-grid">
+                    <div class="speaker speaker-1">
+                        <span class="speaker-name">
+                            <span tabindex="0">Sortie 1</span>
+                            <input type="text" enterkeyhint="done" />
+                        </span>
+                        <span class="material-symbols-outlined"
+                            ><span class="speaker-on-symbol">volume_up</span
+                            ><span class="speaker-off-symbol">volume_off</span></span
+                        >
+                        <div class="speaker-toggle speaker-toggle-1">
+                            <button>
+                                <span class="speaker-toggle-on">éteindre</span
+                                ><span class="speaker-toggle-off">allumer</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="speaker speaker-2">
+                        <span class="speaker-name">
+                            <span tabindex="0">Sortie 2</span>
+                            <input type="text" enterkeyhint="done" />
+                        </span>
+                        <span class="material-symbols-outlined"
+                            ><span class="speaker-on-symbol">volume_up</span
+                            ><span class="speaker-off-symbol">volume_off</span></span
+                        >
+                        <div class="speaker-toggle speaker-toggle-2">
+                            <button>
+                                <span class="speaker-toggle-on">éteindre</span
+                                ><span class="speaker-toggle-off">allumer</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="speaker speaker-3">
+                        <span class="speaker-name">
+                            <span tabindex="0">Sortie 3</span>
+                            <input type="text" enterkeyhint="done" />
+                        </span>
+                        <span class="material-symbols-outlined"
+                            ><span class="speaker-on-symbol">volume_up</span
+                            ><span class="speaker-off-symbol">volume_off</span></span
+                        >
+                        <div class="speaker-toggle speaker-toggle-3">
+                            <button>
+                                <span class="speaker-toggle-on">éteindre</span
+                                ><span class="speaker-toggle-off">allumer</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="speaker speaker-4">
+                        <span class="speaker-name">
+                            <span tabindex="0">Sortie 4</span>
+                            <input type="text" enterkeyhint="done" />
+                        </span>
+                        <span class="material-symbols-outlined"
+                            ><span class="speaker-on-symbol">volume_up</span
+                            ><span class="speaker-off-symbol">volume_off</span></span
+                        >
+                        <div class="speaker-toggle speaker-toggle-4">
+                            <button>
+                                <span class="speaker-toggle-on">éteindre</span
+                                ><span class="speaker-toggle-off">allumer</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p class="speaker-rename-hint">
+                    Astuce : il est possible de renommer un haut-parleur en cliquant
+                    dessus.
+                </p>
+            </div>
+        </section>
+
+        <section class="sources">
+            <div class="container">
+                <h2>Sources</h2>
+
+                <div class="sources-grid">
+                    <div class="source source-1">
+                        <span class="source-name">
+                            <span tabindex="0">Entrée 1</span>
+                            <input type="text" enterkeyhint="done" />
+                        </span>
+                        <div class="source-select">
+                            <button>
+                                <span class="source-select-selected"> utilisée </span>
+                                <span class="source-select-unselected">utiliser</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="source source-2">
+                        <span class="source-name">
+                            <span tabindex="0">Entrée 2</span>
+                            <input type="text" enterkeyhint="done" />
+                        </span>
+                        <div class="source-select">
+                            <div class="source-select">
+                                <button>
+                                    <span class="source-select-selected"> utilisée </span>
+                                    <span class="source-select-unselected">utiliser</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="source source-3">
+                        <span class="source-name">
+                            <span tabindex="0">Entrée 3</span>
+                            <input type="text" enterkeyhint="done" />
+                        </span>
+                        <div class="source-select">
+                            <div class="source-select">
+                                <button>
+                                    <span class="source-select-selected"> utilisée </span>
+                                    <span class="source-select-unselected">utiliser</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="source source-4">
+                        <span class="source-name">
+                            <span tabindex="0">Entrée 4</span>
+                            <input type="text" enterkeyhint="done" />
+                        </span>
+                        <div class="source-select">
+                            <div class="source-select">
+                                <button>
+                                    <span class="source-select-selected"> utilisée </span>
+                                    <span class="source-select-unselected">utiliser</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="speaker-rename-hint">
+                    Astuce : il est possible de renommer une source en cliquant dessus.
+                </p>
+            </div>
+        </section>
+
+        <section class="preferences">
+            <div class="container">
+                <h2>Paramètres</h2>
+            </div>
+
+            <div class="auto-power-off">
+                <div class="container">
+                    <h3>
+                        Extinction automatique
+                        <span class="material-symbols-outlined">clear_night</span>
+                    </h3>
+
+                    <p class="schedule-hint">
+                        Pendant les plages sélectionnées, les haut-parleurs s'éteindront
+                        automatiquement afin d'économiser du courant. Ils peuvent être
+                        réactivés si nécessaire.
+                    </p>
+
+                    <div class="schedule-grid">
+                        <button class="schedule">0h</button>
+                        <button class="schedule">1h</button>
+                        <button class="schedule">2h</button>
+                        <button class="schedule">3h</button>
+                        <button class="schedule">4h</button>
+                        <button class="schedule">5h</button>
+                        <button class="schedule">6h</button>
+                        <button class="schedule">7h</button>
+                        <button class="schedule">8h</button>
+                        <button class="schedule">9h</button>
+                        <button class="schedule">10h</button>
+                        <button class="schedule">11h</button>
+                        <button class="schedule">12h</button>
+                        <button class="schedule">13h</button>
+                        <button class="schedule">14h</button>
+                        <button class="schedule">15h</button>
+                        <button class="schedule">16h</button>
+                        <button class="schedule">17h</button>
+                        <button class="schedule">18h</button>
+                        <button class="schedule">19h</button>
+                        <button class="schedule">20h</button>
+                        <button class="schedule">21h</button>
+                        <button class="schedule">22h</button>
+                        <button class="schedule">23h</button>
+                    </div>
+
+                    <div class="schedule-grid-caption">
+                        <div class="schedule-grid-caption-enabled">
+                            <div></div>
+                            <span
+                                >Heures où le système audio s'éteindra
+                                automatiquement</span
+                            >
+                        </div>
+                        <div class="schedule-grid-caption-disabled">
+                            <div></div>
+                            <span>Heures où le système audio est actif</span>
+                        </div>
+                        <p>Cliquez sur une heure pour basculer entre actif / inactif.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="danger-zone">
+                <div class="container">
+                    <h3>
+                        Zone dangereuse
+                        <span class="material-symbols-outlined">warning</span>
+                    </h3>
+
+                    <div class="danger-zone-buttons">
+                            <h4 class="restart-title">Redémarrer le switch</h4>
+                            <p class="restart-desc">
+                                Le système audio va sauvegarder son état actuel, redémarrer, puis reprendre son état actuel. Pendant le redémarrage, les haut-parleurs seront coupés.
+                            </p>
+
+                            <div class="confirmation restart-check">
+                                <input
+                                type="checkbox"
+                                    class="confirmation-checkbox"
+                                    id="confirmation-checkbox-restart"
+                                />
+                                <label for="confirmation-checkbox-restart"
+                                    >Je confirme vouloir redémarrer le système audio</label
+                                >
+                            </div>
+
+                            <button disabled class="danger-btn restart-btn">Redémarrer</button>
+                            <h4 class="reset-title">Restaurer les paramètres par défaut</h4>
+                            <p class="reset-desc">
+                                Le système audio va restaurer les paramètres par défaut, puis redémarrer. Pendant le redémarrage, les haut-parleurs seront coupés.
+                            </p>
+
+                            <div class="confirmation reset-check">
+                                <input id="confirmation-checkbox-reset" type="checkbox">
+                                <label for="confirmation-checkbox-reset"
+                                    >Je confirme vouloir restaurer les paramètres par
+                                    défaut</label
+                                >
+                            </div>
+                            <button
+                                disabled
+                                class="danger-btn reset-btn"
+                                
+                            >
+                                Restaurer les paramètres par défaut
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
